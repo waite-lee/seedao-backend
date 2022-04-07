@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/551eddac-e3d3-4d6a-8ac4-1ceb916952e5/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/seedao",
+    "appService.deploySubpath": "."
+}
