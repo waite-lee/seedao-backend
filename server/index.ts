@@ -1,8 +1,8 @@
 import 'module-alias/register';
-import '@server/config/dotenv';
 import logger from '@server/config/pino';
-
 import server from './server';
+
+require('dotenv').config();
 
 const port = process.env.PORT || 8000;
 
