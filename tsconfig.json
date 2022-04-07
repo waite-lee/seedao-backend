@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "paths": {
+      "@server/*": [
+        "server/*"
+      ],
+    },
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ],
+  "include": [
+    "server/**/*.ts",
+    "electron/renderer.ts"
+  ]
+}
