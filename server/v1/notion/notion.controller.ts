@@ -8,7 +8,6 @@ function fetchNotionData(req: Request, res: Response): void {
     try {
         const id = req.body.databaseId as string;
         const filter = req.body.filter as QueryDatabaseFilterParameters;
-
         notionService.fetchNotionData(id, filter).then((ret) => reqResponse.success(res, ret as object))
             .catch(() => reqResponse.serverError(res));
     } catch (error) {
